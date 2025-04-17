@@ -20,7 +20,7 @@
   position: absolute;
   font-size: 18px;
   /* top: 50px; */
-  left: 27%;
+  left: 20%;
   color: white;
 }
 
@@ -32,6 +32,30 @@
   margin-right: 5vw;
   margin-bottom: 10vh;
   padding: 20px;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.7rem;
+  color: #333333;
+  text-align: center;
+}
+.pm {
+  transform: translateY(150%);
+  color: #333333;
+}
+
+.bpa {
+  transform: translateY(300%);
+  color: #333333;
+}
+
+.soft-dev {
+  color: #333333;
 }
 
 h1,
@@ -48,17 +72,19 @@ h1:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 9px solid hotpink;
+  outline: 4px solid darkgrey; /* Set the outline */
+  outline-offset: -2px; /* Adjust the distance between the outline and the element */
+  width: 50%; /* Limit the width to 50% */
   transition: 0.2s;
+  transform: translateX(50%); /* Move the element 50% to the right */
+  box-sizing: border-box;
 }
-background: -webkit-linear-gradient(green, lime);
--webkit-background-clip: text;
+
 background-clip: text;
 -webkit-text-fill-color: transparent;
 border: 9px solid hotpink;
 transition: 0.2s;
 
-/* Designing button */
 .logo button {
   border: none;
   outline: 0;
