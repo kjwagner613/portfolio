@@ -1,220 +1,139 @@
-.spacer {
-  margin-left: 10px;
-  margin-right: 10px;
+.pillar-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 2em auto;
 }
 
-.gfg {
-  filter: blur(5px);
+.pillar-image {
   width: 100%;
-  height: 300px;
-}
-
-.proj-titles {
-  font-family: merriweather sans-serif;
-  font-size: 1.5rem;
-}
-
-.logo {
-  text-align: center;
-  /* transform: translatex(-%); */
-  position: absolute;
-  font-size: 18px;
-  /* top: 50px; */
-  left: 20%;
-  color: white;
-}
-
-.container {
-  margin-top: 140px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 2vw;
-  margin-right: 5vw;
-  margin-bottom: 10vh;
-  padding: 20px;
-  max-width: 1400px;
-}
-
-.fields {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1vh;
-  /* font-family: "Playfair Display", sans-serif; */
-  font-size: 1.7rem;
-  color: #333333;
-  text-align: center;
-  max-width: 1400px;
-}
-.pm {
-  transform: translateY(150%);
-  color: #333333;
-  font-size: 1.8rem;
-  font-style: italic;
-}
-
-.bpa {
-  transform: translateY(300%);
-  color: #333333;
-  font-size: 1.8rem;
-  font-style: italic;
-}
-
-.soft-dev {
-  color: #333333;
-  font-family: Lato;
-  font-size: 1.8rem;
-  font-style: italic;
-}
-
-h1,
-p {
-  border: 4px solid white;
-  padding: 10px 50px;
-  position: relative;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.intro:hover {
-  background: -webkit-linear-gradient(green, lime);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  outline: 4px solid darkgrey; /* Set the outline */
-  outline-offset: -2px; /* Adjust the distance between the outline and the element */
-  width: 50%; /* Limit the width to 50% */
-  transition: 0.2s;
-  transform: translateX(50%); /* Move the element 50% to the right */
-  box-sizing: border-box;
-}
-
-.intro {
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: 9px solid hotpink;
-  transition: 0.2s;
-}
-
-.logo-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.logo-button:hover {
-  background-color: green;
-  color: white;
-}
-
-.indent-text {
-  text-indent: 25px;
-}
-
-.hover-text {
-  position: relative;
-  display: inline-block;
-  color: black;
-  transition: color 0.3s ease;
-  transform: translateX(36%);
-}
-
-.hover-text:hover::after {
-  text-indent: 20px;
-  content: " to my portfolio";
-  color: black;
-  position: absolute;
-  left: 20px;
-  top: 50px;
-  white-space: nowrap;
-  transition-duration: 0.4s;
-}
-
-.btn {
-  background-color: #c69156;
-  /* border: 4px solid #200c6a9e; */
-  border: 4px solid transparent;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  font-size: 1.3rem;
-  margin: 12px 22px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  transition: box-shadow 0.4s ease, border-color 0.4s ease, border 0.4s ease;
-  border-radius: 12px;
-}
-
-.btn:hover {
-  background-color: white;
-  border: 12px solid #72170d;
-  color: black;
-  font-size: 1.5rem;
-}
-
-.navbar {
-  display: flex;
-  background-color: #594150;
-  border-left: px solid #45a049;
-}
-
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-#projects li {
-  margin-bottom: 1.5em; /* Adds space between each <li> item */
-}
-
-.project-brief {
-  margin-top: 0.3em;
-  font-style: italic;
-  color: #555;
-}
-
-.biography {
-  font-family: lato;
-  color: #333333;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
-.built-with {
-  margin-top: 0.3em;
-  font-style: italic;
-  color: #555;
-}
-
-.technology-used {
-  margin-top: -2em;
-  font-style: italic;
-  color: #555;
-}
-
-.project-link {
-  margin-top: 0.3em;
-  font-style: italic;
-  color: #555;
-  margin-right: 10px;
-  border-bottom: 1pt solid #555;
-}
-
-.body-container {
+  height: auto;
   display: block;
-  justify-content: center;
-  align-items: center;
+  font-family: lato;
+  flex: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.5rem;
+  color: #333333;
 }
+
+.pillar-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 33.33%;
+  cursor: pointer;
+}
+
+/* Position each clickable zone */
+.pillar-zone.left {
+  left: 0;
+}
+.pillar-zone.center {
+  left: 33.33%;
+}
+.pillar-zone.right {
+  left: 66.66%;
+}
+
+/* Optional: Add subtle hover effect */
+.pillar-zone:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fafafa;
+    color: #333;      <link rel="stylesheet" href="./styles.css">      <link resl="stylesheet" href="./styles.css">
+  }
+
+  .hero {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em 1em;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  .pillar-visual {
+    max-width: 500px;
+    margin: 1.2em auto;
+    display: block;
+    transform: scale(1.2) translateY(17px);
+  }
+
+  .pillars {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+  }
+
+  .pillars div {
+    flex: 1 1 250px;
+    margin: 1em;
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .pillars div:hover {
+    background: #d0d0d0;
+  }
+
+  section.content {
+    padding: 2em 1em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section.content h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3em;
+  }
+
+  .tie-together {
+    background: #f4f4f4;
+    padding: 2em 1em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .tie-together h2 {
+    margin: 0;
+  }
+  .tie-together p {
+    margin: 0.5em 0;
+  }
+  .prof-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adds space between the columns */
+    gap: 20px; /* Optional: Adds space between the columns */
+  }
+  
+  .prof-container .column {
+    flex: 1; /* Makes both columns take up equal space */
+    max-width: 50%; /* Ensures each column is no wider than 50% */
+  }
