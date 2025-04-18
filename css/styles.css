@@ -163,3 +163,122 @@ html {
     transition: transform 0.3s ease;
   }
   
+  .pillar-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  .pillar-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .pillar-zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 60%
+    width: 33.33%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .pillar-zone span.pillar-label {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  
+  .pillar-zone:hover span.pillar-label {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+ 
+  .pillar-zone.left {
+    width: 24%;
+    left: 6%;
+  }
+  
+  .pillar-zone.center {
+    width: 24%;
+    left: 38%;
+  }
+  
+  .pillar-zone.right {
+    width: 24%;
+    left: 70%;
+  }
+  
+ 
+  .pillar-zone.base {
+    width: 50%;
+    height: 20%;
+    top: auto;
+    bottom: 0;
+    left: 25%;
+  }
+  
+  .pillar-zone span.pillar-label {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+.pillar-zone:hover span.pillar-label {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+a.pillar-zone:nth-child(5) > span:nth-child(1) {
+  transform: translateY(-35%) translateX(-50%); 
+}
+a.pillar-zone:nth-child(2) > span:nth-child(1) {
+  transform: translateY(-150%) translateX(-43%); 
+}
+
+a.pillar-zone:nth-child(3) > span:nth-child(1) {
+  transform: translateY(-150%) translateX(-45%); 
+}
+
+a.pillar-zone:nth-child(4) > span:nth-child(1) {
+  transform: translateY(-150%) translateX(-50%); 
+}
+
+
+@media only screen and (orientation: portrait) {
+  body::before {
+    content: "🔄 For the best experience, please rotate your device.";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    font-size: 1.2em;
+    z-index: 9999;
+    padding: 2em;
+    text-align: center;
+  }
+
+  body {
+    overflow: hidden; 
+  }
+}
