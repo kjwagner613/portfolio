@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-/* Position each clickable zone */
+
 .pillar-zone.left {
   left: 0;
 }
@@ -35,13 +35,13 @@
   left: 66.66%;
 }
 
-/* Optional: Add subtle hover effect */
+
 .pillar-zone:hover {
   background-color: rgba(255, 255, 255, 0.05);
   transition: background-color 0.2s;
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
@@ -54,7 +54,7 @@ html {
     padding: 0;
     line-height: 1.6;
     background: #fafafa;
-    color: #333;      <link rel="stylesheet" href="./styles.css">      <link resl="stylesheet" href="./styles.css">
+    color: #333;
   }
 
   .hero {
@@ -128,12 +128,38 @@ html {
     margin: 0.5em 0;
   }
   .prof-container {
-    display: flex; /* Enables Flexbox */
-    justify-content: space-between; /* Adds space between the columns */
-    gap: 20px; /* Optional: Adds space between the columns */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
   
   .prof-container .column {
-    flex: 1; /* Makes both columns take up equal space */
-    max-width: 50%; /* Ensures each column is no wider than 50% */
+    flex: 1; 
+    max-width: 50%; 
   }
+
+  .back-to-top {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .back-to-top a {
+    font-size: 0.9em;
+    color: white;
+    border: 2px solid #555;
+    padding: 0.3em .8em;
+    border-radius: 10px;
+    background: grey;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-to-top a:hover {
+    color: #000;
+    text-decoration: underline;
+    background: #fff;
+    transform: scale(1.35);
+    transition: transform 0.3s ease;
+  }
+  
