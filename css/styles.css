@@ -67,7 +67,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1:hover {
+.intro:hover {
   background: -webkit-linear-gradient(green, lime);
   -webkit-background-clip: text;
   background-clip: text;
