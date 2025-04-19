@@ -1,0 +1,139 @@
+.pillar-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+.pillar-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: lato;
+  flex: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.pillar-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 33.33%;
+  cursor: pointer;
+}
+
+/* Position each clickable zone */
+.pillar-zone.left {
+  left: 0;
+}
+.pillar-zone.center {
+  left: 33.33%;
+}
+.pillar-zone.right {
+  left: 66.66%;
+}
+
+/* Optional: Add subtle hover effect */
+.pillar-zone:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fafafa;
+    color: #333;      <link rel="stylesheet" href="./styles.css">      <link resl="stylesheet" href="./styles.css">
+  }
+
+  .hero {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em 1em;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  .pillar-visual {
+    max-width: 500px;
+    margin: 1.2em auto;
+    display: block;
+    transform: scale(1.2) translateY(17px);
+  }
+
+  .pillars {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+  }
+
+  .pillars div {
+    flex: 1 1 250px;
+    margin: 1em;
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .pillars div:hover {
+    background: #d0d0d0;
+  }
+
+  section.content {
+    padding: 2em 1em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  section.content h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3em;
+  }
+
+  .tie-together {
+    background: #f4f4f4;
+    padding: 2em 1em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .tie-together h2 {
+    margin: 0;
+  }
+  .tie-together p {
+    margin: 0.5em 0;
+  }
+  .prof-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Adds space between the columns */
+    gap: 20px; /* Optional: Adds space between the columns */
+  }
+  
+  .prof-container .column {
+    flex: 1; /* Makes both columns take up equal space */
+    max-width: 50%; /* Ensures each column is no wider than 50% */
+  }
