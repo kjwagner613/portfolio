@@ -43,18 +43,23 @@
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   padding-right: 0.5em;
   align-items: center;
-  background-color: var(--hover-color);
+  background-color: var(--text-color);
   z-index: 500;
   border:   2px solid var(--border-color);
+  border-left:  12px solid var(--hover-color);
   border-radius: 10px;
   box-shadow: 0 4px 2px -2px gray;
-
-
+  height: 30px; /* Set a fixed height for the navbar */
+  padding: 0 1em; /* Reduce padding to make it narrower */
 }
+
+
+
 
 .navbar a {
   color: var(--secondary-color);
@@ -62,6 +67,7 @@
   text-decoration: none;
   text-align: center;
   flex: 0 1 auto;
+
 }
 
 
@@ -78,9 +84,10 @@
   list-style: none;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 950px) {
   .menu {
     display: none;
+    margin-top: 1rem;
     flex-direction: column;
     background-color: #222;
     width: 100%;
@@ -97,7 +104,6 @@
 }
 
 
-.
 
 p {
   margin-left: 1.5em;
@@ -241,7 +247,7 @@ section.content h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.prof-container .column {
+.prof-container.column {
   flex: 1;
   max-width: 50%;
 }
@@ -441,6 +447,7 @@ form input[type="reset"] {
   justify-content: space-between;
     align-items: flex-start; 
   margin-top: 1.5em;
+  
 }
 
 .contact-grid div,
