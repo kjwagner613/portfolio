@@ -81,7 +81,9 @@
         <ol>
           <li>
             <div class="body-container">
-              <p class="proj-titles">Champion MyLife Wellness Organizer</p>
+              <p class="proj-titles">
+                <strong>Champion MyLife Wellness Organizer</strong>
+              </p>
               <p class="project-brief">Share the burden of designing and maintaining a healthy plan with your loved
                 ones.</p>
               <p class="built-with">Built with the following:</p>
@@ -95,7 +97,7 @@
           </li>
           <li>
             <div class="body-container">
-              <p class="proj-titles">ToDo - A Task List</p>
+              <p class="proj-titles"><strong>ToDo - A Task List</strong></p>
               <p class="project-brief">Just an easy-to-use task list where you can create tasks quickly, then come back
                 to
                 them at a more convenient time to add additional information. It is a front-end REACT interface paired
@@ -113,7 +115,7 @@
             </div>
           </li>
           <li>
-            <p class="proj-titles">Community Cookbook</p>
+            <p class="proj-titles"><strong>Community Cookbook</strong></p>
             <div class="body-container">
               <p class="project-brief">Share your recipes with a community that you select. You can create and keep
                 track
@@ -127,7 +129,7 @@
             </div>
           </li>
           <li>
-            <p class="proj-titles">HSE Good Catch Tracker</p>
+            <p class="proj-titles"><strong>HSE Good Catch Tracker</strong></p>
             <div class="body-container">
               <p class="project-brief">Intended for Health, Safety, and Environment risk mitigation, employees can
                 quickly
@@ -144,7 +146,7 @@
             </div>
           </li>
           <li>
-            <p class="proj-titles">Concentration</p>
+            <p class="proj-titles"><strong>Concentration</strong></p>
             <div class="body-container">
               <p class="project-brief">A fun memory concentration game with vibrant artistry and an engaging theme. See
                 if
@@ -343,34 +345,58 @@
     <p>If you'd like to get in touch, I welcome professional inquiries, collaborations, or just a good conversation.</p>
 
     <div class="contact-grid">
-      <div>
-        <p><strong>Email:</strong> <a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+14582546393">(458) 254-6393</a></p>
-        <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/kev613/"
-            target="_blank">www.linkedin.com/in/kev613</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/kjwagner613" target="_blank">github.com/kjwagner613</a>
-        <p><strong>Cover Letter:</strong> <a href="./assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank">Download
-            PDF (Right click - save "link" or "target" as)</a></p>
-        <p><strong>Full Resume:</strong> <a href="./assets/Kevin Wagner Resume 2025.pdf" target="_blank">Download
-            PDF (Right click - save "link" or "target" as)</a></p>
+      <div class="contact-column">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a>
+          </p>
+        </div>
+        <div class="contact-info">
+          <p><strong>Phone:</strong> <a href="tel:+14582546393">(458) 254-6393</a></p>
+        </div>
+        <div class="contact-info">
+          <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/kev613/"
+              target="_blank">www.linkedin.com/in/kev613</a></p>
+        </div>
+      </div>
+      <div class="contact-column">
+        <div class="contact-info">
+          <p><strong>GitHub:</strong> <a href="https://github.com/kjwagner613"
+              target="_blank">github.com/kjwagner613</a>
+        </div>
+        <div class="contact-info">
+          <p><strong>Cover Letter:</strong> <a href="./assets/Kevin Wagner Cover Letter 2025.pdf"
+              target="_blank">Download
+              PDF (Right click - save "link" or "target" as)</a></p>
+        </div>
+        <div class="contact-info">
+          <p><strong>Full Resume:</strong> <a href="./assets/Kevin Wagner Resume 2025.pdf" target="_blank">Download
+              PDF (Right click - save "link" or "target" as)</a></p>
+        </div>
       </div>
 
       <!-- Optional: Contact Form -->
-      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-        <input type="hidden" name="form-name" value="contact" />
+      <div class="email-form-container">
+        <div class="email-entries-grid">
+          <h3>Send me a message...</h3>
+          <p>If you prefer, you can also reach out to me using the form below:</p>
+          <form class="contact-form">
+            <fieldset class="form-fieldset">
+              <legend>Contact Form:</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name">
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+            </fieldset>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
-      </form>
-
+            <button class="send-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -378,7 +404,7 @@
 </main>
 <footer>
   <div class="footer-container">
-    <p>© 2023 Kevin Wagner. All rights reserved.</p>
+    <p>© 2025 Kevin Wagner. All rights reserved.</p>
 
 </footer>
 </body>
