@@ -6,6 +6,26 @@
   --font-family: "Lato", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #595959;
+  font-size: .8em;
+  
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+p {
+  margin-left: 1.5em;
+}
+
 .pillar-wrapper {
   position: relative;
   max-width: 600px;
@@ -16,12 +36,7 @@
   width: 100%;
   height: auto;
   display: block;
-  font-family: lato;
-  flex: 1;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 1.5rem;
-  color: var(--text-color);
+
 }
 
 .pillar-zone {
@@ -52,7 +67,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -117,6 +132,13 @@ section.content {
 section.content h2 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.3em;
+}
+
+.list-container {
+  display: flex;
+  gap: 1em;
+  margin: 2em 0;
+  margin-left: 30px;
 }
 
 .tie-together {
@@ -189,9 +211,9 @@ section.content h2 {
   height: 60%;
   width: 33.33%;
   cursor: pointer;
-  text-align: center;
+  /* text-align: center;
   color: white;
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 .pillar-zone:hover span.pillar-label {
@@ -199,26 +221,31 @@ section.content h2 {
 }
 
 .pillar-zone.left {
-  width: 24%;
-  left: 6%;
+  left: 11.6%;
+  top: 37.2%;
+  width: 16.3%;
+  height: 45.6%;
 }
 
 .pillar-zone.center {
-  width: 24%;
-  left: 38%;
+  left: 42.6%;
+  top: 37.2%;
+  width: 16.3%;
+  height: 45.6%;
 }
 
 .pillar-zone.right {
-  width: 24%;
-  left: 70%;
+  left: 73.9%;
+  top: 37.2%;
+  width: 16.3%;
+  height: 45.6%;
 }
 
 .pillar-zone.base {
-  width: 50%;
-  height: 20%;
-  top: auto;
-  bottom: 0;
-  left: 25%;
+  left: 4.8%;
+  top: 88.8%;
+  width: 92.2%;
+  height: 7.4%;
 }
 
 .pillar-zone span.pillar-label {
@@ -234,21 +261,6 @@ section.content h2 {
 
 .pillar-zone:hover span.pillar-label {
   background: rgba(0, 0, 0, 0.7);
-}
-
-a.pillar-zone:nth-child(5) > span:nth-child(1) {
-  transform: translateY(-35%) translateX(-50%);
-}
-a.pillar-zone:nth-child(2) > span:nth-child(1) {
-  transform: translateY(-150%) translateX(-23%);
-}
-
-a.pillar-zone:nth-child(3) > span:nth-child(1) {
-  transform: translateY(-150%) translateX(-45%);
-}
-
-a.pillar-zone:nth-child(4) > span:nth-child(1) {
-  transform: translateY(-150%) translateX(-50%);
 }
 
 @media only screen and (orientation: portrait) {
