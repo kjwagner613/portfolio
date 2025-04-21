@@ -334,28 +334,38 @@
     <p class="back-to-top"><a href="#top">⬆ Back to Top</a></p>
   </section>
   <a href="tel:+18005551234" class="contact-float">📞 Call Kevin</a>
-  <section class="content" id="contact">
+  <section class="content contact-section" id="contact">
     <h2>Contact</h2>
-    <p>If you would like to get in touch with me, please feel free to reach out via email or LinkedIn. I am always
-      open to discussing new opportunities and collaborations.</p>
+    <p>If you'd like to get in touch, I welcome professional inquiries, collaborations, or just a good conversation.</p>
 
-    <p>E-Mail: <a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kjwagnerconsulting/">linkedin.com/in/kjwagnerconsulting/</a></p>
-    <p>Telephone: <a href="tel:+114582903536">458-290-3536</a></p>
-    <p>GitHub: <a href="https://github.com/kjwagner613" target="_blank" rel="noopener">github.com/kjwagner613</a></p>
-
-
-    <form action="mailto:kevin.wagner.2024@outlook.com" method="post" enctype="text/plain">
-      <label for="name">Sender's Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
-      <label for="email">Sender's Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
-      <div class="btn-container">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+    <div class="contact-grid">
+      <div>
+        <p><strong>Email:</strong> <a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+14582903536">(458) 290-3536</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kjwagnerconsulting/"
+            target="_blank">linkedin.com/in/kjwagnerconsulting</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/kjwagner613" target="_blank">github.com/kjwagner613</a>
+        </p>
       </div>
+
+      <!-- Optional: Contact Form -->
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
 </main>
 <footer>
   <div class="footer-container">

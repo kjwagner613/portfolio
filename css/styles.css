@@ -423,3 +423,52 @@ form input[type="reset"] {
   margin-top: 1em; /* Add some space above the buttons */
 
 }
+
+.contact-section {
+  background-color: #f9f9f9;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+    align-items: flex-start; 
+  margin-top: 1.5em;
+}
+
+.contact-grid div,
+.contact-form {
+  flex: 1 1 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: var(--font-body);
+}
+
+.contact-form button {
+  padding: 0.6em 1.2em;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0e3e73;
+}
