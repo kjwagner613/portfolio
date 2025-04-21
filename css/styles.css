@@ -171,7 +171,22 @@ body {
   font-size: 1.5em;
 }
 
+.automation-item {
+  font-size: .8em;
+  }
 
+.automation-group {
+  display: flex;
+  margin-left: 2em;
+  }
+
+.history-group {
+  display: flex;
+  margin-left: 2em;
+  font-size: .8em;
+  }
+
+    
 .hero {
   background: var(--secondary-color);
   color: var(--text-color);
@@ -214,8 +229,6 @@ section.content h2 {
 
 .column {
   margin-left: 50px;
-
-
 }
 
 
@@ -244,7 +257,21 @@ section.content h2 {
 .contact-closing p {
   margin: 0.5em 0;
 }
+.proficiencies {
+  font-size: .8em;
+}
 
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4em;
+  color: var(--font-color);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1em;
+  color: var(--font-color);
+}
 
 .prof-container {
   display: flex;
