@@ -341,27 +341,28 @@
       <div>
         <p><strong>Email:</strong> <a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:+14582546393">(458) 254-6393</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kjwagnerconsulting/"
-            target="_blank">linkedin.com/in/kjwagnerconsulting</a></p>
+        <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/kev613/"
+            target="_blank">www.linkedin.com/in/kev613</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/kjwagner613" target="_blank">github.com/kjwagner613</a>
         </p>
       </div>
 
       <!-- Optional: Contact Form -->
-      <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
         <input type="hidden" name="form-name" value="contact" />
 
-        <label>Name:</label>
-        <input type="text" name="name" required />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label>Email:</label>
-        <input type="email" name="email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-        <label>Message:</label>
-        <textarea name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Send</button>
       </form>
+
 
     </div>
   </section>
