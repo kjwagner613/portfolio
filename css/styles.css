@@ -1,21 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap');
+
 :root {
-  --background-color: #f2e9d9;
-  --secondary-color: #558c65;
+  --primary-color: #145091;
+  --secondary-color: #f9f9f9;
   --text-color: #333333;
-  --highlight-color: #e3ab4f;
-  --font-family: "Lato", sans-serif;
+  --border-color: #9f4545;
+  --hover-color: #76899d;
+  --highlight-color: #ffcc00;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+  --spacing-small: 8px;
+  --spacing-medium: 15px;
+  --spacing-large: 20px;
+  --border-radius: 8px;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 98%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #595959;
+  background-color: var(--primary-color);
   font-size: .8em;
-  
+  z-index: 1000;
 }
 
 .navbar a {
-  color: white;
+  color: var(--secondary-color);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -67,31 +79,39 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
-  margin: 0;
+  font-family: var(--font-body);
+  margin-top: 50px;
   padding: 0;
   line-height: 1.6;
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--background-color);
+  color: var(--font-color);
 }
 
 .hero {
-  background: #333;
+  background: var(--secondary-color);
   color: var(--text-color);
   text-align: center;
   padding: 2em 1em 1em;
+  border-radius: var(--border-radius);
+  border-bottom-color: var(--border-color);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  box-shadow: 0 4px 2px -2px gray;
+  margin: 0 auto;
 }
 
 .hero h1 {
+  font-family: var(--font-heading);
   font-size: 2.5em;
   margin: 0;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 .hero p {
+  font-fmamily: var(--font-body);
   font-size: 1.2em;
   margin-top: 0.5em;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 .pillar-visual {
@@ -146,7 +166,7 @@ section.content h2 {
   padding: 2em 1em;
   text-align: center;
   font-style: italic;
-  border: 2px solid var(--highlight-color); 
+  border: 2px solid var(--border-color); 
   border-radius: 10px;
 }
 
@@ -174,21 +194,22 @@ section.content h2 {
 
 .back-to-top a {
   font-size: 0.9em;
-  color: white;
-  border: 2px solid #555;
+  color: var(--secondary-color);
+  border: 2px solid var(--highlight-color);
   padding: 0.3em 0.8em;
   border-radius: 10px;
-  background: grey;
+  background: var(--primary-color);
+  font-family: var(--font-body);
   text-decoration: none;
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .back-to-top a:hover {
-  color: #000;
+  color: var(--secondary-color);
   text-decoration: underline;
-  background: #fff;
-  transform: scale(1.35);
+  background: var(--primary-color);
+  transform: scale(1.15);
   transition: transform 0.3s ease;
 }
 
