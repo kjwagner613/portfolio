@@ -52,10 +52,13 @@
   z-index: 500;
   border:   2px solid var(--border-color);
   border-left:  12px solid var(--border-color);
+  border-right: 12px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0 4px 2px -2px gray;
   height: 30px; 
   padding: 0 1em; 
+  text-align: left;
+  width: 100%;
 }
 
 
@@ -67,7 +70,15 @@
   text-decoration: none;
   text-align: center;
   flex: 0 1 auto;
+  font-size: 1em;
+  font-family: var(--font-body);
 
+}
+
+.navbar a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+  transition: color 0.5s ease;
 }
 
 
@@ -107,7 +118,7 @@
 
 p {
   margin-left: 1.5em;
-  font-size: 1.2em;
+  font-size: .8em;
 }
 
 .pillar-wrapper {
