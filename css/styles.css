@@ -42,7 +42,7 @@
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: 2px;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -55,10 +55,10 @@
   border-right: 12px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0 4px 2px -2px gray;
-  height: 30px; 
+  height: 40px; 
   padding: 0 1em; 
   text-align: left;
-  width: 100%;
+  width: 90%;
 }
 
 
