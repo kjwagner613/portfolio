@@ -8,6 +8,10 @@
   --highlight-color: #ffcc00;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Lato', sans-serif;
+  --font-p-size: .9em;
+  --font-h3-size: 1.2em;
+  --font-h2-size: 1.8em;
+  --font-h1-size: 2em;
   --spacing-small: 8px;
   --spacing-medium: 15px;
   --spacing-large: 20px;
@@ -18,12 +22,13 @@
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  max-width: 1600px;
+  max-width: 1100px;
   z-index: 10;
   border: 5px solid var(--border-color);
   margin-left: .5vw;
   margin-right: 1vw;
   border-radius: 10px;
+  overflow: scroll;
 
 }
 
@@ -81,7 +86,7 @@ main {
   text-decoration: none;
   text-align: center;
   flex: 0 1 auto;
-  font-size: .8em;
+  font-size: var(--font-p-size);
   font-family: var(--font-heading);
 }
 .navbar a:hover {
@@ -91,7 +96,7 @@ main {
 }
 .menu-toggle {
   display: none;
-  font-size: 1.8em;
+  font-size: var(--font-h3-size);
   cursor: pointer;
 }
 .menu {
@@ -103,7 +108,7 @@ main {
 
 p {
   margin-left: 1.5em;
-  font-size: 1em;
+  font-size: var(--font-p-size);
 }
 .pillar-zone {
   position: absolute;
@@ -142,10 +147,10 @@ body {
   line-height: 1.6;
   background: var(--background-color);
   color: var(--text-color);
-  font-size: 1.5em;
+
 }
 .automation-item {
-  font-size: .8em;
+  font-size: var(--font-p-size);
   }
 .automation-group {
   display: flex;
@@ -154,7 +159,7 @@ body {
 .history-group {
   display: flex;
   margin-left: 2em;
-  font-size: .8em;
+  font-size:  var(--font-p-size);
   }
 
 .hero {
@@ -173,13 +178,13 @@ body {
 }
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: 2.5em;
+  font-size: var(--font-h1-size);
   margin: 0;
   color: var(--text-color);
 }
 .hero p {
   font-family: var(--font-body);
-  font-size: 1.2em;
+  font-size:  var(--font-h3-size);
   margin-top: 0.5em;
   color: var(--text-color);
 }
@@ -221,12 +226,12 @@ section.content h2 {
 
 h2 {
   font-family: var(--font-heading);
-  font-size: 1.2em;
+  font-size:  var(--font-h2-size);
   color: var(--text-color);
 }
 h3 {
   font-family: var(--font-heading);
-  font-size: 1.1em;
+  font-size: var(--font-h3-size);
   color: var(--text-color);
 }
 
@@ -240,7 +245,7 @@ h3 {
 .prof-h2 {
   text-align: center;
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: var(--font-h2-size);
   color: var(--text-color);
   font-family: var(--font-heading);
 }
@@ -267,8 +272,9 @@ h3 {
 
 .prof-col li {
   margin-bottom: 0.5em;
-  font-size: 1em;
+  font-size: var(--font-p-size);
   color: var(--text-color);
+  text-indent: 2em;
 }
 .contact-float {
   position: fixed;
@@ -294,7 +300,7 @@ h3 {
   margin-top: 2em;
 }
 .back-to-top a {
-  font-size: 0.9em;
+  font-size: var(--font-h3-size);
   color: var(--secondary-color);
   border: 2px solid var(--highlight-color);
   padding: 0.3em 0.8em;
@@ -365,7 +371,7 @@ h3 {
   background: rgba(0, 0, 0, 0.5);
   padding: 0.3em 0.6em;
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size:  var(--font-p-size);
 }
 .pillar-zone:hover span.pillar-label {
   background: rgba(0, 0, 0, 0.7);
@@ -377,18 +383,18 @@ form textarea {
   width: 60%;
   margin-bottom: 1em; 
   padding: 0.5em;
-  font-size: 1em; 
+  font-size:  var(--font-h2-size); 
   border: 2px solid var(--border-color); 
   border-radius: 5px; 
   box-sizing: border-box; 
 }
 form textarea {
   height: 3em;
-  font-size: 1em;
+  font-size:  var(--font-h2-size);
 }
 form input[type="submit"],
 form input[type="reset"] {
-  font-size: 0.9em;
+  font-size:  var(--font-h3-size);
   color: var(--secondary-color);
   border: 2px solid var(--highlight-color);
   padding: 0.3em 0.8em;
@@ -486,7 +492,7 @@ form input[type="reset"] {
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: var(--font-h2-size);
   box-sizing: border-box;
 }
 .contact-form textarea {
@@ -494,7 +500,7 @@ form input[type="reset"] {
   min-height: 150px;
 }
 .send-button {
-  font-size: 0.9em;
+  font-size:  var(--font-h3-size);
   color: var(--secondary-color);
   border: 2px solid var(--highlight-color);
   padding: 0.3em 0.8em;
