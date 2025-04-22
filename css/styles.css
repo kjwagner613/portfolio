@@ -13,6 +13,20 @@
   --spacing-large: 20px;
   --border-radius: 8px;
 }
+
+.page-wrapper {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1600px;
+  z-index: 10;
+  border: 5px solid var(--border-color);
+  margin-left: .5vw;
+  margin-right: 1vw;
+  border-radius: 10px;
+
+}
+
 .bpa-container {
   border: 3px solid #ff990d;
   padding: 20px;
@@ -47,19 +61,18 @@
   border-right: 12px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0 4px 2px -2px gray;
-  height: 40px; 
+  height: 50px; 
   padding: 0 1em; 
   text-align: left;
-  width: 90%;
+  width: 100%;
 }
 
+.autobiography {
+   min-width: 970px
+}
 
-@media (max-width: 900px) {
-  .navbar {
-  height: 80px;
-  /* Allow text to wrap on smaller screens */
-  white-space: normal;
-  }
+main {
+ min-width: 970px;
 }
 
 .navbar a {
@@ -69,7 +82,7 @@
   text-align: center;
   flex: 0 1 auto;
   font-size: .8em;
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
 }
 .navbar a:hover {
   color: var(--highlight-color);
@@ -86,22 +99,8 @@
   gap: 1em;
   list-style: none;
 }
-@media (max-width: 950px) {
-  .menu {
-    display: none;
-    margin-top: 1rem;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 1em;
-  }
-  .menu.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-}
+
+
 p {
   margin-left: 1.5em;
   font-size: 1em;
@@ -126,10 +125,17 @@ p {
   background-color: rgba(255, 255, 255, 0.05);
   transition: background-color 0.2s;
 }
+
 html {
   scroll-behavior: smooth;
+  font-size: clamp(14px, 1.5vw, 18px);
+  
 }
+
 body {
+  min-width: 980px;
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: var(--font-body);
   margin-top: 50px;
   padding: 0;
@@ -151,10 +157,6 @@ body {
   font-size: .8em;
   }
 
-/* .h3SoftDevProf {
-  white-space: nowrap;
-} */
-
 .hero {
   background: var(--secondary-color);
   color: var(--text-color);
@@ -166,6 +168,8 @@ body {
   border-bottom-width: 2px;
   box-shadow: 0 4px 2px -2px gray;
   margin: 0 auto;
+  margin-top: 5vh;
+  transform: scale(1.15);
 }
 .hero h1 {
   font-family: var(--font-heading);
@@ -190,23 +194,14 @@ section.content h2 {
 }
 .column {
   margin-left: 50px;
+  flex: 1;
+  min-width: 300px;
 }
-@media (max-width: 900px) {
-  .prof-container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2em auto;
-    padding: 1em;
-    width: 100%;
-    max-width: 100%;
-  }
 
-  .prof-container .column {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    padding: 0 1em;
-  }
+.content {
+  margin: 0 auto;
+  max-width: 970px;
+
 }
 
 .contact-closing {
@@ -223,12 +218,10 @@ section.content h2 {
 .contact-closing p {
   margin: 0.5em 0;
 }
-.proficiencies {
-  font-size: .8em;
-}
+
 h2 {
   font-family: var(--font-heading);
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: var(--text-color);
 }
 h3 {
@@ -236,26 +229,46 @@ h3 {
   font-size: 1.1em;
   color: var(--text-color);
 }
-.prof-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+
+.proficient-cntnr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
   margin: 2em auto;
-  border: 3px solid grey;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
 }
-.prof-container.column {
-  flex: 1;
-  max-width: 50%;
+.prof-h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: var(--text-color);
+  font-family: var(--font-heading);
 }
-.foundation-container {
-  border: 3px solid #98d259;
-  padding: 20px;
-  border-radius: 10px;  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.prof-col {
+  background-color: var(--secondary-color);
   padding: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prof-col h3 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+.prof-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prof-col li {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: var(--text-color);
 }
 .contact-float {
   position: fixed;
