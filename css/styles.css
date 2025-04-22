@@ -37,7 +37,7 @@
   top: 2px;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-right: 0.5em;
   align-items: center;
   background-color: var(--primary-color);
@@ -52,13 +52,23 @@
   text-align: left;
   width: 90%;
 }
+
+
+@media (max-width: 900px) {
+  .navbar {
+  height: 80px;
+  /* Allow text to wrap on smaller screens */
+  white-space: normal;
+  }
+}
+
 .navbar a {
   color: var(--secondary-color);
   padding: 1px 1px;
   text-decoration: none;
   text-align: center;
   flex: 0 1 auto;
-  font-size: 1em;
+  font-size: .8em;
   font-family: var(--font-body);
 }
 .navbar a:hover {
