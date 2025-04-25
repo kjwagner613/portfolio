@@ -16,12 +16,14 @@
 <nav class="navbar">
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   <ul class="menu" id="nav-menu">
+    <button id="toggle-helpers" class="toggle-button">Hide Helpers</button>
     <li><a href="#top">Home</a></li>
     <li><a href="#software-development">Software Development</a></li>
     <li><a href="#project-management">Project Management</a></li>
     <li><a href="#business-process-automation">Automation</a></li>
     <li><a href="#foundation">Foundation</a></li>
     <li><a href="#contact">Contact</a></li>
+
   </ul>
 </nav>
 
@@ -48,15 +50,17 @@
       </div>
     </section>
 
-    <div class="helper-cartoon" id="helper-cartoon">
-      <img src="./assets/helpers/cat.png" alt="Helper Cartoon-Cat">
-      <div class="speech-bubble">Hi, I am from the Concentration Game. Just letting you know you can scroll these cards.
-      </div>
-    </div>
+
 
     <section class="content" id="autobiography">
       <div id="#cartoon-trigger-autobiography"></div>
       <h2>Autobiography</h2>
+      <div class="helper-cartoon" id="helper-cat" data-section="autobiography" data-name="Cat">
+        <img src="./assets/helpers/cat.png" alt="Helper Cartoon - Cat">
+        <div class="speech-bubble">Hi, I'm the Cat from the cast of Concentration Game. Some of us are here to help
+          provide more information. If you prefer you can give us some time off by clicking the Hide Helpers button on
+          the top left.</div>
+      </div>
       <p class="autobiography">
       <p>Technology professional with 30+ years of experience, my career journey began in the dynamic world of
         Entertainment and Broadcast News in the early 1990s. Rapid advancement at various studios, including NBC
@@ -86,9 +90,11 @@
           real
           challenges. Previous experience has taught me how to manage deadlines, deliver value, and optimize processes.
           Software development allows for the application of these skills, guided by objectives and vision.</p>
-        <p> I code the same way I lead: with clarity, with consideration, and always with the end in mind. </p>
+        <p>Personality has a way of coming out in what we do, my core values are evident here: clarity, consideration,
+          patience, and always working with the end in mind.</p>
 
-        <section id="software-projects">
+        <section>
+
           <h3>Coding</h3>
           <ol>
             <li>
@@ -109,6 +115,7 @@
             </li>
             <li>
               <div class="body-container">
+
                 <p class="proj-titles"><strong>ToDo - A Task List</strong></p>
                 <p class="project-brief">Just an easy-to-use task list where you can create tasks quickly, then come
                   back
@@ -142,7 +149,12 @@
               </div>
             </li>
             <li>
-              <p class="proj-titles"><strong>HSE Good Catch Tracker</strong></p>
+              <p class="proj-titles" id="software-projects"><strong>HSE Good Catch Tracker</strong></p>
+              <div class="helper-cartoon" id="helper-mongoose" data-section="software-projects" data-name="Mongoose">
+                <img src="./assets/helpers/mongoose.png" alt="Helper Cartoon - Mongoose">
+                <div class="speech-bubble">Hello, the game Cat referred to is number 5 on this list. Its the first thing
+                  Kevin coded. The second thing he made -- was us!</div>
+              </div>
               <div class="body-container">
                 <p class="project-brief">Intended for Health, Safety, and Environmental risk mitigation, employees can
                   quickly log any hazards they come across during their day in a system that can notify their safety
@@ -178,7 +190,8 @@
     <div class="proficient-cntnr">
       <div class="prof-col">
         <h3>Software Development</h3>
-        </span>
+
+
         <ul>
           <li class="prof">HTML</li>
           <li class="prof">CSS</li>
@@ -220,6 +233,12 @@
     </div>
     <section class="content" id="project-management">
       <h2>Project Management</h2>
+      <div class="helper-cartoon" id="helper-monkey" data-section="project-management" data-name="Monkey">
+        <img src="./assets/helpers/monkey.png" alt="Helper Cartoon - Monkey">
+        <div class="speech-bubble">Yeah, he can do all this stuff really well but dont think for one second this list is
+          inclusive. It would take a lot of space to list 30 years worth on. Is there something in particular you would
+          like to know?</div>
+      </div>
       <div class="pm-container">
 
         <p>Project Management involves integrating people, processes, and technology to accomplish a common
@@ -296,11 +315,19 @@
       <p class="back-to-top"><a href="#top">⬆ Back to Top</a></p>
     </section>
 
-    <section class="content" id="business-process-automation">
+    <section class="content">
       <h2>Business Process Automation</h2>
-      <div class="bpa-container">
 
-        <h3>History in Automation</h3>
+
+      <div class="bpa-container">
+        <div class="helper-cartoon" id="helper-pig" data-section="business-process-automation" data-name="Pig">
+          <img src="./assets/helpers/pig.png" alt="Helper Cartoon - Pig">
+          <div class="speech-bubble">He really "trimmed the fat" here. Overall cutting days off the old process
+            durations
+            just by automating status updates!</div>
+        </div>
+        <h3 id="business-process-automation">History in Automation</h3>
+
         <p>There are always individuals who become the go-to people for assistance. In the office, this often
           pertains to
           technological support, and in my life, that individual has consistently been me. My employment at
@@ -383,6 +410,15 @@
     <!-- <a href="tel:+14582546393" class="contact-float">📞 Call Kevin</a> -->
     <section class="content contact-section" id="contact">
       <h2>Contact</h2>
+      <div class="helper-cartoon" id="helper-turtle" data-section="contact" data-name="Turtle">
+        <img src="./assets/helpers/turtle.png" alt="Helper Cartoon - Turtle">
+        <div class="speech-bubble">That's the ending of this, but not of all the things that could have gone in here. If
+          there is anything you would like to know you can send him a message using this form, or contact him
+          directly.<p></p>
+          Nice meeting you!<p></p> Have a great remainder of your day!<p></p>
+          <p></p>
+        </div>
+      </div>
       <p>If you'd like to get in touch, I welcome professional inquiries, collaborations, or just a good
         conversation.</p>
 
