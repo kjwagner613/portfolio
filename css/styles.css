@@ -33,7 +33,7 @@
     height: auto;
     transition: right 0.5s ease-in-out;
     z-index: 1000;
-    transform: scale(.35);
+    transform: scale(.25);
   }
   
   .helper-cartoon.visible {
@@ -44,15 +44,16 @@
     position: fixed;
     top: 10px;
     right: 20px; 
-    height: 250px;
-    width: 550px ;
+    height: 450px;
+    width: 750px ;
+    line-height: 1.2em;
     background-color: tan;
     color: #333;
     border: 22px ridge goldenrod;
     padding: 10px 15px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 3em;
+    font-size: 5em;
     font-family: var(--font-body);
     overflow: scroll;
   
@@ -61,12 +62,12 @@
   .speech-bubble:after {
     content: '';
     position: absolute;
-    bottom: -10px; /* Adjust to point to the cartoon */
-    left: 20px; /* Adjust to align with the bubble */
+    bottom: -10px;
+    left: 20px; 
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-top-color: #fff; /* Match the bubble's background color */
+    border-top-color: #fff;
   }
 
 #rotate-message {
@@ -136,7 +137,6 @@ h1 {
   top: 2px;
   left: 0;
   display: flex;
-  /* justify-content: space-between; */
   padding-right: 0.5em;
   align-items: center;
   background-color: var(--primary-color);
@@ -189,7 +189,11 @@ main {
 p {
   margin-left: 1.5em;
   font-size: var(--font-p-size);
+  line-height: 1.5;
+  color: var(--text-color);
+  
 }
+
 .pillar-zone {
   position: absolute;
   top: 0;
@@ -197,15 +201,19 @@ p {
   width: 33.33%;
   cursor: pointer;
 }
+
 .pillar-zone.left {
   left: 0;
 }
+
 .pillar-zone.center {
   left: 33.33%;
 }
+
 .pillar-zone.right {
   left: 66.66%;
 }
+
 .pillar-zone:hover {
   background-color: rgba(255, 255, 255, 0.05);
   transition: background-color 0.2s;
@@ -512,6 +520,7 @@ form input[type="reset"] {
   border:   3px solid var(--border-color);
   border-radius: 10px;
   margin: 0 auto;
+  color: blue;
 }
 
 #contact {
