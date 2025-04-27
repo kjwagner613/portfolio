@@ -12,6 +12,20 @@ document.addEventListener("DOMContentLoaded", () => {
             toggleButton.textContent = helpersVisible ? "Hide Helpers" : "Show Helpers";
         });
     }
+    document.getElementById('toggle-helpers').addEventListener('click', function () {
+        const helpers = document.querySelectorAll('.helper-cartoon');
+        const button = this;
+
+        helpers.forEach(helper => {
+            if (helper.style.display === 'none') {
+                helper.style.display = 'block';
+                button.textContent = 'Hide Helpers';
+            } else {
+                helper.style.display = 'none';
+                button.textContent = 'Show Helpers';
+            }
+        });
+    });
 
     document.addEventListener("scroll", () => {
         helperCartoons.forEach((cartoon) => {

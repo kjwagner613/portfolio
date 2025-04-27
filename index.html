@@ -14,7 +14,7 @@
 <div id="rotate-message">Please rotate your device to landscape mode for the best experience.</div>
 
 <nav class="navbar">
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
   <ul class="menu" id="nav-menu">
     <button id="toggle-helpers" class="toggle-button">Hide Helpers</button>
     <li><a href="#top">Home</a></li>
@@ -23,6 +23,7 @@
     <li><a href="#business-process-automation">Automation</a></li>
     <li><a href="#foundation">Foundation</a></li>
     <li><a href="#contact">Contact</a></li>
+
 
   </ul>
 </nav>
@@ -48,28 +49,34 @@
       </div>
     </section>
 
-    <section class="content" id="autobiography">
-      <div id="#cartoon-trigger-autobiography"></div>
-      <h2>Autobiography</h2>
-      <div class="helper-cartoon" id="helper-cat" data-section="autobiography" data-name="Cat">
-        <img src="./assets/helpers/cat.png" alt="Helper Cartoon - Cat">
-        <div class="speech-bubble">Hi, I'm the Cat from the cast of Concentration Game. Some of us are here to help
-          provide more information. If you prefer you can give us some time off by clicking the Hide Helpers button on
-          the top left.</div>
-      </div>
+    <section class="content">
+      <div class="autobiography-container">
+        <div id="#cartoon-trigger-autobiography"></div>
+        <h2>Autobiography</h2>
+        <div class="helper-cartoon" id="helper-cat" data-section="autobiography" data-name="Cat">
+          <img src="./assets/helpers/cat.png" alt="Helper Cartoon - Cat">
+          <div class="speech-bubble">Hi, I'm the Cat from the cast of Concentration Game. Some of us are here to help
+            provide more information. If you prefer you can give us some time off by clicking the Hide Helpers button on
+            the top left.</div>
+        </div>
 
-      <p class="autobiography">
-      <p>Technology professional with 30+ years of experience, my career journey began in the dynamic world of
-        Entertainment and Broadcast News in the early 1990s. Rapid advancement at various studios, including NBC
-        Burbank, and smaller firms specializing in Marketing and Promotion, saw me progress from Facility Technician to
-        Chief Engineer. This experience instilled a deep appreciation for teamwork and dedication.</p>
-      <p>Seeking a change of pace, I moved to Freudenberg Medical's IT department. As Master Data Migration Coordinator,
-        I spearheaded the data migration for six global SAP implementations across their manufacturing plants.
-        Subsequently, I established their project management office and evolved into a Cloud Specialist, migrating data
-        to the cloud, training 1200 users on Microsoft 365 best practices, and leading the Copilot rollout. </p>
-      <p>My expertise includes tech support, digitization, automation, and custom solutions. Now deeply interested in
-        software development, which has been demonstrated through gaining proficiency in multiple programming languages
-        and a proven ability to excel in both individual and team settings.</p>
+        <p class="autobiography" id="autobiography">
+        <p>Technology professional with 30+ years of experience, my career journey began in the dynamic world of
+          Entertainment and Broadcast News in the early 1990s. Rapid advancement at various studios, including NBC
+          Burbank, and smaller firms specializing in Marketing and Promotion, saw me progress from Facility Technician
+          to
+          Chief Engineer. This experience instilled a deep appreciation for teamwork and dedication.</p>
+        <p>Seeking a change of pace, I moved to Freudenberg Medical's IT department. As Master Data Migration
+          Coordinator,
+          I spearheaded the data migration for six global SAP implementations across their manufacturing plants.
+          Subsequently, I established their project management office and evolved into a Cloud Specialist, migrating
+          data
+          to the cloud, training 1200 users on Microsoft 365 best practices, and leading the Copilot rollout. </p>
+        <p>My expertise includes tech support, digitization, automation, and custom solutions. Now deeply interested in
+          software development, which has been demonstrated through gaining proficiency in multiple programming
+          languages
+          and a proven ability to excel in both individual and team settings.</p>
+      </div>
     </section>
 
     <section class="content" id="software-development">
@@ -379,7 +386,7 @@
           maintenance, and a continuous pursuit of excellence in every aspect of a business. There are no shortcuts
           or
           easier ways.</p>
-        <h2>Bringing it all together</h2>
+        <h3>Bringing it all together</h3>
         <p>Each discipline complements the others—development builds and modifies, project management ensures
           focused and
           efficient efforts, and process automation not only delivers precision for current tasks but also lays the
@@ -388,7 +395,7 @@
       </div>
       <p class="back-to-top"><a href="#top">⬆ Back to Top</a></p>
     </section>
-    <!-- <a href="tel:+14582546393" class="contact-float">📞 Call Kevin</a> -->
+
     <section class="content contact-section" id="contact">
       <h2>Contact</h2>
       <div class="helper-cartoon" id="helper-turtle" data-section="contact" data-name="Turtle">
@@ -408,8 +415,7 @@
           <label>Email:</label>
           <p><a href="mailto:kevin.wagner.2024@outlook.com">kevin.wagner.2024@outlook.com</a>
           </p>
-        </div>
-        <div class="contact-info">
+
           <label>Phone:</label>
           <p><a href="tel:+14582546393">(458) 254-6393</a></p>
         </div>
@@ -417,28 +423,22 @@
           <label>LinkedIn:</label>
           <p><a href="https://www.linkedin.com/in/kev613/" target="_blank">https://www.linkedin.com/in/kev613/</a>
           </p>
+          <label>GitHub:</label>
+          <p><a href="https://github.com/kjwagner613" target="_blank">https://github.com/kjwagner613</a>
+        </div>
+        <div class="contact-info">
+          <label>Cover Letter:</label>
+          <p><a href="./assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank">Download PDF</a></p>
+          <label>Full Resume:</label>
+          <p><a href="./assets/Kevin Wagner Resume 2025.pdf" target="_blank">Download PDF</a></p>
         </div>
 
-        <div class="contact-column">
-          <div class="contact-info">
-            <label>GitHub:</label>
-            <p><a href="https://github.com/kjwagner613" target="_blank">github.com/kjwagner613</a>
-          </div>
-          <div class="contact-info">
-            <label>Cover Letter:</label>
-            <p><a href="./assets/Kevin Wagner Cover Letter 2025.pdf" target="_blank">Download PDF</a></p>
-          </div>
-          <div class="contact-info">
-            <label>Full Resume:</label>
-            <p><a href="./assets/Kevin Wagner Resume 2025.pdf" target="_blank">Download PDF</a></p>
-          </div>
-        </div>
       </div>
-      <!-- Optional: Contact Form -->
+
       <div class="email-form-container">
         <div class="email-entries-grid">
           <h3>Send me a message...</h3>
-          <p>If you prefer, you can also reach out to me using the form below:</p>
+          <p>If you prefer, you can also reach out to me using this form:</p>
           <form class="contact-form">
             <fieldset class="form-fieldset">
               <legend>Contact Form:</legend>
