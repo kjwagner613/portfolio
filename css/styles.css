@@ -120,22 +120,28 @@ h1 {
   display:flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto; 
+  scrollbar-width: none;
   max-width: 1600px;
   z-index: 10;
   border: 5px solid var(--border-color);
   margin-left: 0vw;
   margin-right: 1vw;
   border-radius: 10px;
-  overflow: scroll;
+
 
 }
 
+.page-wrapper::-webkit-scrollbar {
+  display: none;
+}
 
 .autobiography-container {
   margin: 0 auto;
   max-width: 900px;
   text-align: justify;
   padding: 20px;
+  margin-top: 4em;
 }
 
 
@@ -269,21 +275,6 @@ body {
 
 }
 
-
-/* .automation-item {
-  font-size: var(--font-p-size);
-  }
-.automation-group {
-  display: flex;
-  margin-left: 2em;
-  } */
-
-
-/* .history-group {
-  display: flex;
-  margin-left: 2em;
-  font-size:  var(--font-p-size);
-  } */
 
 .hero {
   background: var(--secondary-color);
@@ -498,7 +489,7 @@ form textarea {
   width: 60%;
   margin-bottom: 1em; 
   padding: 0.5em;
-  font-size:  var(--font-h2-size); 
+  font-size:  var(--font-h3-size); 
   border: 2px solid var(--border-color); 
   border-radius: 5px; 
   box-sizing: border-box; 
@@ -507,7 +498,7 @@ form textarea {
 
 form textarea {
   height: 3em;
-  font-size:  var(--font-h2-size);
+  font-size:  var(--font-h3-size);
 }
 
 
@@ -544,9 +535,10 @@ form input[type="reset"] {
   padding: 1em;
   border:   3px solid var(--border-color);
   border-radius: 10px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   color: blue;
 }
+
 
 #contact {
  background-color: lightgrey;  
@@ -586,7 +578,7 @@ form input[type="reset"] {
 }
 .contact-form {
   /* max-width: 600px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 1rem;
   border: 3px solid var(--border-color);
   background-color: var(--secondary-color);
@@ -606,7 +598,7 @@ form input[type="reset"] {
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: var(--font-h2-size);
+  font-size: var(--font-h3-size);
   box-sizing: border-box;
 }
 .contact-form textarea {
@@ -624,7 +616,8 @@ form input[type="reset"] {
   text-decoration: none;
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
-  max-width: 100px;
+  margin-left: 3em;
+  width: 150px;
 }
 .send-button:hover {
   color: var(--secondary-color);
