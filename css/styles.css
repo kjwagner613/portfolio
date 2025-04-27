@@ -8,6 +8,7 @@
   --border-color: #9f4545;
   --hover-color: #76899d;
   --highlight-color: #ffcc00;
+  --foundation-color: #92d050;
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Lato', sans-serif;
   --font-p-size: .9em;
@@ -93,6 +94,10 @@
   }
 } 
 
+#contact > div.contact-grid {
+  color: var(--text-color);
+
+}
 
 h1 {
   font-family: var(--font-heading);
