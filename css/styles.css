@@ -406,6 +406,12 @@ h3 {
   text-indent: 2em;
 }
 
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
 
 .back-to-top {
   text-align: center;
