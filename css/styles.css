@@ -2,8 +2,10 @@
 
 
 :root {
+  --background-color: #9b8a8a60;
   --primary-color: #145091;
   --secondary-color: #f9f9f9;
+  /* --text-color: rgb(197, 183, 183); */
   --text-color: #333333;
   --border-color: #9f4545;
   --hover-color: #76899d;
@@ -27,6 +29,9 @@
   font-style: normal;
 }
 
+.center {
+  text-align: center;
+}
 
 .helpers {
   display: none;
